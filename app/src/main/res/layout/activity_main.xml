@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/description" />
+
+        <Button
+            android:id="@+id/apache_2.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apache"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/cc_by_3.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CC BY 3.0"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/cc_by_4.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CC BY 4.0"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/cc_by_sa_3.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CC BY SA 3.0"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/cc_by_sa_4.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CC BY SA 4.0"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/mit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIT License"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+    </LinearLayout>
+
+</ScrollView>

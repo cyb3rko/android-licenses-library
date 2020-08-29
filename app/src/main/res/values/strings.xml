@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android Licenses Sample</string>
+
+    <string name="description">If you click on the buttons you see the spanned license texts this library provides.
+        \n\nThe first call of a license will take a bit longer, the following calls are quicker because of the license texts being cached by the
+        library.
+        \n\nThe bottom sheets don\'t have anything to do with this library, I used the library \'Material Dialogs\' by \'affolestad\'.
+    </string>
+</resources>
