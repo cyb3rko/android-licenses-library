@@ -12,28 +12,40 @@ class AndroidLicenses {
     companion object {
         @SuppressWarnings("WeakerAccess")
         const val APACHE_2_0 = "apache_2.0"
+        const val APACHE_2_0_PLAIN = "apache_2.0_plain"
 
         @SuppressWarnings("WeakerAccess")
         const val CC_BY_3_0 = "cc_by_3.0"
+        const val CC_BY_3_0_PLAIN = "cc_by_3.0_plain"
 
         @SuppressWarnings("WeakerAccess")
         const val CC_BY_4_0 = "cc_by_4.0"
+        const val CC_BY_4_0_PLAIN = "cc_by_4.0_plain"
 
         @SuppressWarnings("WeakerAccess")
         const val CC_BY_SA_3_0 = "cc_by_sa_3.0"
+        const val CC_BY_SA_3_0_PLAIN = "cc_by_sa_3.0_plain"
 
         @SuppressWarnings("WeakerAccess")
         const val CC_BY_SA_4_0 = "cc_by_sa_4.0"
+        const val CC_BY_SA_4_0_PLAIN = "cc_by_sa_4.0_plain"
 
         @SuppressWarnings("WeakerAccess")
         const val MIT = "mit"
+        const val MIT_PLAIN = "mit_plain"
 
         private var apache20: Spanned? = null
+        private var apache20Plain: Spanned? = null
         private var ccBy30: Spanned? = null
+        private var ccBy30Plain: Spanned? = null
         private var ccBy40: Spanned? = null
+        private var ccBy40Plain: Spanned? = null
         private var ccBySa30: Spanned? = null
+        private var ccBySa30Plain: Spanned? = null
         private var ccBySa40: Spanned? = null
+        private var ccBySa40Plain: Spanned? = null
         private var mit: Spanned? = null
+        private var mitPlain: Spanned? = null
 
         private lateinit var appContext: Context
 
@@ -44,11 +56,17 @@ class AndroidLicenses {
         fun get(licenseName: String) : Spanned {
             return when (licenseName) {
                 APACHE_2_0,
+                APACHE_2_0_PLAIN,
                 CC_BY_3_0,
+                CC_BY_3_0_PLAIN,
                 CC_BY_4_0,
+                CC_BY_4_0_PLAIN,
                 CC_BY_SA_3_0,
+                CC_BY_SA_3_0_PLAIN,
                 CC_BY_SA_4_0,
-                MIT -> getLicenseText(licenseName)
+                CC_BY_SA_4_0_PLAIN,
+                MIT,
+                MIT_PLAIN -> getLicenseText(licenseName)
 
                 else -> {
                     Log.e("AndroidLicenses", "License not found for: $licenseName")
@@ -72,27 +90,44 @@ class AndroidLicenses {
         private fun getSpannedObject(licenseName: String) : Spanned? {
             return when (licenseName) {
                 APACHE_2_0 -> apache20
+                APACHE_2_0_PLAIN -> apache20Plain
                 CC_BY_3_0 -> ccBy30
+                CC_BY_3_0_PLAIN -> ccBy30Plain
                 CC_BY_4_0 -> ccBy40
+                CC_BY_4_0_PLAIN -> ccBy40Plain
                 CC_BY_SA_3_0 -> ccBySa30
+                CC_BY_SA_3_0_PLAIN -> ccBySa30Plain
                 CC_BY_SA_4_0 -> ccBySa40
+                CC_BY_SA_4_0_PLAIN -> ccBySa40Plain
                 MIT -> mit
+                MIT_PLAIN -> mitPlain
 
                 else -> null
             }
         }
 
         private fun setSpannedObject(licenseName: String) : Spanned {
-            @Suppress("DEPRECATION")
-            val newSpannedObject = Html.fromHtml(appContext.assets.open("$licenseName.html").bufferedReader().use { it.readText() })
+            val newSpannedObject: Spanned
+            if (licenseName.endsWith("_plain", true)) {
+                newSpannedObject = appContext.assets.open("$licenseName.txt").bufferedReader().readText().toSpanned()
+            } else {
+                @Suppress("DEPRECATION")
+                newSpannedObject = Html.fromHtml(appContext.assets.open("$licenseName.html").bufferedReader().use { it.readText() })
+            }
 
             when (licenseName) {
                 APACHE_2_0 -> apache20 = newSpannedObject
+                APACHE_2_0_PLAIN -> apache20Plain = newSpannedObject
                 CC_BY_3_0 -> ccBy30 = newSpannedObject
+                CC_BY_3_0_PLAIN -> ccBy30Plain = newSpannedObject
                 CC_BY_4_0 -> ccBy40 = newSpannedObject
+                CC_BY_4_0_PLAIN -> ccBy40Plain = newSpannedObject
                 CC_BY_SA_3_0 -> ccBySa30 = newSpannedObject
+                CC_BY_SA_3_0_PLAIN -> ccBySa30Plain = newSpannedObject
                 CC_BY_SA_4_0 -> ccBySa40 = newSpannedObject
+                CC_BY_SA_4_0_PLAIN -> ccBySa40Plain = newSpannedObject
                 MIT -> mit = newSpannedObject
+                MIT_PLAIN -> mitPlain = newSpannedObject
             }
 
             return newSpannedObject

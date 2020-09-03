@@ -25,11 +25,17 @@ class MainActivity : AppCompatActivity() {
     fun onClick(view: View?) {
         when (view?.id) {
             R.id.apache_2_0 -> showLicense(AndroidLicenses.APACHE_2_0)
+            R.id.apache_2_0_plain -> showLicense(AndroidLicenses.APACHE_2_0_PLAIN)
             R.id.cc_by_3_0 -> showLicense(AndroidLicenses.CC_BY_3_0)
+            R.id.cc_by_3_0_plain -> showLicense(AndroidLicenses.CC_BY_3_0_PLAIN)
             R.id.cc_by_4_0 -> showLicense(AndroidLicenses.CC_BY_4_0)
+            R.id.cc_by_4_0_plain -> showLicense(AndroidLicenses.CC_BY_4_0_PLAIN)
             R.id.cc_by_sa_3_0 -> showLicense(AndroidLicenses.CC_BY_SA_3_0)
+            R.id.cc_by_sa_3_0_plain -> showLicense(AndroidLicenses.CC_BY_SA_3_0_PLAIN)
             R.id.cc_by_sa_4_0 -> showLicense(AndroidLicenses.CC_BY_SA_4_0)
+            R.id.cc_by_sa_4_0_plain -> showLicense(AndroidLicenses.CC_BY_SA_4_0_PLAIN)
             R.id.mit -> showLicense(AndroidLicenses.MIT)
+            R.id.mit_plain -> showLicense(AndroidLicenses.MIT_PLAIN)
         }
     }
 
