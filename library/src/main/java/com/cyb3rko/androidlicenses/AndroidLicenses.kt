@@ -10,27 +10,21 @@ import androidx.core.text.toSpanned
 class AndroidLicenses {
 
     companion object {
-        @SuppressWarnings("WeakerAccess")
         const val APACHE_2_0 = "apache_2.0"
         const val APACHE_2_0_PLAIN = "apache_2.0_plain"
 
-        @SuppressWarnings("WeakerAccess")
         const val CC_BY_3_0 = "cc_by_3.0"
         const val CC_BY_3_0_PLAIN = "cc_by_3.0_plain"
 
-        @SuppressWarnings("WeakerAccess")
         const val CC_BY_4_0 = "cc_by_4.0"
         const val CC_BY_4_0_PLAIN = "cc_by_4.0_plain"
 
-        @SuppressWarnings("WeakerAccess")
         const val CC_BY_SA_3_0 = "cc_by_sa_3.0"
         const val CC_BY_SA_3_0_PLAIN = "cc_by_sa_3.0_plain"
 
-        @SuppressWarnings("WeakerAccess")
         const val CC_BY_SA_4_0 = "cc_by_sa_4.0"
         const val CC_BY_SA_4_0_PLAIN = "cc_by_sa_4.0_plain"
 
-        @SuppressWarnings("WeakerAccess")
         const val MIT = "mit"
         const val MIT_PLAIN = "mit_plain"
 
