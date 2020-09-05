@@ -72,12 +72,12 @@ class AndroidLicenses {
         private fun getLicenseText(licenseName: String) : Spanned {
             val spannedObject = getSpannedObject(licenseName)
 
-            if (spannedObject != null) {
+            return if (spannedObject != null) {
                 Log.i("AndroidLicenses", "Cached license Spanned object restored: $licenseName")
-                return spannedObject
+                spannedObject
             } else {
                 Log.i("AndroidLicenses", "New Spanned object created for: $licenseName")
-                return setSpannedObject(licenseName)
+                setSpannedObject(licenseName)
             }
         }
 
