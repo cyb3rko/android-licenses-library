@@ -98,4 +98,4 @@ This program comes with ABSOLUTELY NO WARRANTY.
 This is free software, and you are welcome to redistribute it
 under certain conditions.
 ```
-`For details see` [License text](LICENSE.md)
+`For details see` [License text](LICENSE)
