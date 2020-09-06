@@ -1,7 +1,7 @@
 # Android Licenses Library
 [![API](https://img.shields.io/badge/API-1%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=1)
-[![HJitpack](https://jitpack.io/v/cyb3rko/about-icons.svg)](https://jitpack.io/#cyb3rko/about-icons)
-[![last commit](https://img.shields.io/github/last-commit/cyb3rko/about-icons?color=F34C9F)](https://github.com/cyb3rko/about-icons/commits/master)
+[![HJitpack](https://jitpack.io/v/cyb3rko/android-licenses-library.svg)](https://jitpack.io/#cyb3rko/android-licenses-library)
+[![last commit](https://img.shields.io/github/last-commit/cyb3rko/android-licenses-library?color=F34C9F)](https://github.com/cyb3rko/android-licenses-library/commits/master)
 [![license](https://img.shields.io/github/license/cyb3rko/android-licenses-library)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 - [About this project](#about-this-project)  
