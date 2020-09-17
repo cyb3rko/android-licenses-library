@@ -39,9 +39,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showLicense(license: String) {
+    private fun showLicense(licenseName: String) {
+        val license = AndroidLicenses.get(licenseName)
+
         MaterialDialog(this, BottomSheet()).show {
-            message(0, AndroidLicenses.get(license))
+            message(0, license)
         }
     }
 
