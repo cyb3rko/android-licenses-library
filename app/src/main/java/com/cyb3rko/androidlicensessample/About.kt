@@ -25,8 +25,8 @@ class About : AppCompatActivity() {
                 .setIntent(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/cyb3rko/android-licenses-library")))
             )
             .addGroup("Credits")
-            .addItem(Element().setTitle("Benutzte Libraries").setIconDrawable(R.drawable._icon_libraries).setOnClickListener(showLibraries()))
-//                .addItem(Element().setTitle("Benutzte Icons").setIconDrawable(R.drawable._icon_question).setOnClickListener(showIcons()))
+            .addItem(Element().setTitle("Used Libraries").setIconDrawable(R.drawable._icon_libraries).setOnClickListener(showLibraries()))
+//                .addItem(Element().setTitle("Used Icons").setIconDrawable(R.drawable._icon_question).setOnClickListener(showIcons()))
             .create()
 
         setContentView(aboutPage)
