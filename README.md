@@ -9,6 +9,7 @@
 - [How to use](#how-to-use)  
 - [Screenshots](#screenshots)  
 - [Contribute](#contribute)  
+- [Thanks](#thanks)  
 - [Apps using this library](#apps--libraries-using-this-library)  
 - [License](#license)  
 
@@ -17,7 +18,7 @@
 ## About this project
 This lightweight Android library provides the most common licenses in formatted and plain text (as [Spanned object](https://developer.android.com/reference/android/text/Spanned)) for easy use.
 
-YOU CAN **DOWNLOAD** THE **SAMPLE APP** [HERE](https://github.com/cyb3rko/android-licenses-library/raw/master/.github//Sample%20App/AndroidLicensesSample%20v1.0.0.apk)
+YOU CAN **DOWNLOAD** THE **SAMPLE APP** [HERE](https://github.com/cyb3rko/android-licenses-library/raw/master/.github//Sample%20App/AndroidLicensesSample%20v1.0.1.apk)
 
 I'm still a student so the progress might not be as fast as on other projects.
 
@@ -63,8 +64,7 @@ textView.setText(AndroidLicenses.get(AndroidLicenses.CC_BY_SA_4_0)
 ```
 
 ## Screenshots
-
-Only the shown text belongs to the library, the ui and the app belongs to the sample app.
+Only the shown text belongs to the library, the ui is implemented in the sample app to showcase the Spanned objects.
 
 |<img src=".github/images/v1.1.0/screenshot_1.webp" width="270">|<img src=".github/images/v1.1.0/screenshot_2.webp" width="270">|
 |:---:|:---:|
@@ -74,6 +74,9 @@ Of course I'm happy about any kind of contribution.
 
 Feel free to open [issues](https://github.com/cyb3rko/android-licenses-library/issues) for new features or bug reports.
 If you want to directly contribute code just open [pull requests](https://github.com/cyb3rko/android-licenses-library/pulls).
+
+## Thanks
+Special thanks to reddit user [jderp7](https://www.reddit.com/user/jderp7/) for [contributing completely reworked library code](https://www.reddit.com/r/androiddev/comments/ipprkr/kotlin_companion_object_caching/), which was commited by me in [THIS COMMIT](https://github.com/cyb3rko/android-licenses-library/commit/eb42bac7c5a17bf6e0ee5318ef8bfc3c1e5f290f).
 
 ## Apps / Libraries using this library
 *If you want to add an app/library here, just open a [new issue](https://github.com/cyb3rko/android-licenses-library/issues/new) / [PR](https://github.com/cyb3rko/android-licenses-library/compare).*
