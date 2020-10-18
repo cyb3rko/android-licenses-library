@@ -7,7 +7,7 @@ import android.util.Log
 
 import androidx.core.text.toSpanned
 
-class AndroidLicenses {
+interface AndroidLicenses {
 
     companion object {
         const val APACHE_2_0 = "apache_2.0"
