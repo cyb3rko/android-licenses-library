@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
             R.id.cc_by_sa_3_0_plain -> showLicense(AndroidLicenses.License.CC_BY_SA_3_0_PLAIN.licenseName)
             R.id.cc_by_sa_4_0 -> showLicense(AndroidLicenses.License.CC_BY_SA_4_0.licenseName)
             R.id.cc_by_sa_4_0_plain -> showLicense(AndroidLicenses.License.CC_BY_SA_4_0_PLAIN.licenseName)
+            R.id.cc_by_nc_3_0 -> showLicense(AndroidLicenses.License.CC_BY_NC_3_0.licenseName)
+            R.id.cc_by_nc_3_0_plain -> showLicense(AndroidLicenses.License.CC_BY_NC_3_0_PLAIN.licenseName)
             R.id.mit -> showLicense(AndroidLicenses.License.MIT.licenseName)
             R.id.mit_plain -> showLicense(AndroidLicenses.License.MIT_PLAIN.licenseName)
         }
