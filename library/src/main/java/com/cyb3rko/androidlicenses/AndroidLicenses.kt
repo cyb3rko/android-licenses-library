@@ -7,45 +7,24 @@ import android.util.Log
 
 import androidx.core.text.toSpanned
 
-interface AndroidLicenses {
+object AndroidLicenses {
+    private lateinit var appContext: Context
+    private val licenseCache: MutableMap<String, Spanned> = mutableMapOf()
 
-    companion object {
-        const val APACHE_2_0 = "apache_2.0"
-        const val APACHE_2_0_PLAIN = "apache_2.0_plain"
+    @JvmStatic
+    fun init(context: Context) {
+        this.appContext = context
+    }
 
-        const val CC_BY_3_0 = "cc_by_3.0"
-        const val CC_BY_3_0_PLAIN = "cc_by_3.0_plain"
-
-        const val CC_BY_4_0 = "cc_by_4.0"
-        const val CC_BY_4_0_PLAIN = "cc_by_4.0_plain"
-
-        const val CC_BY_SA_3_0 = "cc_by_sa_3.0"
-        const val CC_BY_SA_3_0_PLAIN = "cc_by_sa_3.0_plain"
-
-        const val CC_BY_SA_4_0 = "cc_by_sa_4.0"
-        const val CC_BY_SA_4_0_PLAIN = "cc_by_sa_4.0_plain"
-
-        const val MIT = "mit"
-        const val MIT_PLAIN = "mit_plain"
-
-        private lateinit var appContext: Context
-        private val licenseCache: MutableMap<String, Spanned> = mutableMapOf()
-
-        @JvmStatic
-        fun init(context: Context) {
-            this.appContext = context
-        }
-
-        @JvmStatic
-        fun get(licenseName: String): Spanned {
-            return License.findByName(licenseName)?.getSpanned(appContext) ?: let {
-                Log.e("AndroidLicenses", "License not found for: $licenseName")
-                "License not found".toSpanned()
-            }
+    @JvmStatic
+    fun get(licenseName: String): Spanned {
+        return License.findByName(licenseName)?.getSpanned(appContext) ?: let {
+            Log.e("AndroidLicenses", "License not found for: $licenseName")
+            "License not found".toSpanned()
         }
     }
 
-    private enum class License(private val licenseName: String) {
+    enum class License(val licenseName: String) {
         APACHE_2_0("apache_2.0"),
         APACHE_2_0_PLAIN("apache_2.0_plain"),
         CC_BY_3_0("cc_by_3.0"),
