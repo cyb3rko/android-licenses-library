@@ -113,7 +113,7 @@
                 android:id="@+id/cc_by_sa_3.0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CC BY SA 3.0"
+                android:text="CC BY-SA 3.0"
                 android:onClick="onClick"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
@@ -121,7 +121,7 @@
                 android:id="@+id/cc_by_sa_3.0_plain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CC BY SA 3.0 - Plain"
+                android:text="CC BY-SA 3.0 - Plain"
                 android:layout_marginLeft="30dp"
                 android:layout_marginStart="30dp"
                 android:onClick="onClick"
@@ -140,7 +140,7 @@
                 android:id="@+id/cc_by_sa_4.0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CC BY SA 4.0"
+                android:text="CC BY-SA 4.0"
                 android:onClick="onClick"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
@@ -148,7 +148,7 @@
                 android:id="@+id/cc_by_sa_4.0_plain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CC BY SA 4.0 - Plain"
+                android:text="CC BY-SA 4.0 - Plain"
                 android:layout_marginLeft="30dp"
                 android:layout_marginStart="30dp"
                 android:onClick="onClick"
@@ -167,7 +167,7 @@
                 android:id="@+id/cc_by_nc_3.0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CC BY NC 3.0"
+                android:text="CC BY-NC 3.0"
                 android:onClick="onClick"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
@@ -175,7 +175,34 @@
                 android:id="@+id/cc_by_nc_3.0_plain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CC BY NC 3.0 - Plain"
+                android:text="CC BY-NC 3.0 - Plain"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:onClick="onClick"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cc_by_nc_sa_3.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CC BY-NC-SA 3.0"
+                android:onClick="onClick"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <Button
+                android:id="@+id/cc_by_nc_sa_3.0_plain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CC BY-NC-SA 3.0 - Plain"
                 android:layout_marginLeft="30dp"
                 android:layout_marginStart="30dp"
                 android:onClick="onClick"

@@ -37,6 +37,8 @@ object AndroidLicenses {
         CC_BY_SA_4_0_PLAIN("cc_by_sa_4.0_plain"),
         CC_BY_NC_3_0("cc_by_nc_3.0"),
         CC_BY_NC_3_0_PLAIN("cc_by_nc_3.0_plain"),
+        CC_BY_NC_SA_3_0("cc_by_nc_sa_3.0"),
+        CC_BY_NC_SA_3_0_PLAIN("cc_by_nc_sa_3.0_plain"),
         MIT("mit"),
         MIT_PLAIN("mit_plain");
 

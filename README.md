@@ -57,6 +57,8 @@ As the parameter you should use the predefined constants of `AndroidLicenses` cl
 - CC_BY_4_0 / CC_BY_4_0_PLAIN
 - CC_BY_SA_3_0 / CC_BY_SA_3_0_PLAIN
 - CC_BY_SA_4_0 / CC_BY_SA_4_0_PLAIN
+- CC_BY_NC_3_0 / CC_BY_NC_3_0_PLAIN
+- CC_BY_NC_SA_3_0 / CC_BY_NC_SA_3_0_PLAIN
 - MIT / MIT_PLAIN
 
 ```kotlin
